@@ -1,24 +1,8 @@
-# README
+course1 = Course.create(course_title:'title', course_description: 'text', course_content: 'content')
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+jules = Student.create(username: 'Jules', email: 'rigomontj@gmail.com', password: 'roquefort')
 
-Things you may want to cover:
+jules.course_id = course1.id
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Course.all
+Student.all
